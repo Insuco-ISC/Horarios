@@ -26,11 +26,13 @@ Partial Class menuPrincipal
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(15, 318)
+        Me.Button1.Location = New System.Drawing.Point(781, 435)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(101, 23)
         Me.Button1.TabIndex = 0
@@ -42,7 +44,7 @@ Partial Class menuPrincipal
         Me.Button2.BackColor = System.Drawing.Color.NavajoWhite
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Verdana", 20.25!)
-        Me.Button2.Location = New System.Drawing.Point(15, 21)
+        Me.Button2.Location = New System.Drawing.Point(12, 158)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(139, 110)
         Me.Button2.TabIndex = 1
@@ -54,7 +56,7 @@ Partial Class menuPrincipal
         Me.Button3.BackColor = System.Drawing.Color.YellowGreen
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(175, 21)
+        Me.Button3.Location = New System.Drawing.Point(216, 158)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(155, 110)
         Me.Button3.TabIndex = 2
@@ -67,18 +69,31 @@ Partial Class menuPrincipal
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Verdana", 50.0!)
         Me.Button4.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button4.Location = New System.Drawing.Point(15, 150)
+        Me.Button4.Location = New System.Drawing.Point(12, 339)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(558, 130)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Horarios"
         Me.Button4.UseVisualStyleBackColor = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApp2.My.Resources.Resources.universidad_insuco_logo_landingpage
+        Me.PictureBox1.ImageLocation = ""
+        Me.PictureBox1.Location = New System.Drawing.Point(707, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(165, 63)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
+        '
         'menuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(588, 370)
+        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ClientSize = New System.Drawing.Size(884, 481)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -86,6 +101,7 @@ Partial Class menuPrincipal
         Me.Name = "menuPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "menu"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -94,4 +110,5 @@ Partial Class menuPrincipal
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
