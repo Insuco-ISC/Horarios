@@ -87,6 +87,8 @@ Public Class maestro
             TextBox5.Text = row.Cells("compatibilidad").Value.ToString()
             Button3.Enabled = True
             Button2.Enabled = False
+            Button4.Enabled = True
+            Button5.Enabled = True
         End If
     End Sub
     Public Sub SetDoubleBuffered(control As Control, enabled As Boolean)
@@ -108,9 +110,9 @@ Public Class maestro
                 Try
                     connection.Open()
 
-                    command.Parameters.AddWithValue("@nombre", TextBox2.Text)
-                    command.Parameters.AddWithValue("@carrera", TextBox3.Text)
-                    command.Parameters.AddWithValue("@turno", TextBox4.Text)
+                    command.Parameters.AddWithValue("@nombre", StrConv(TextBox2.Text, VbStrConv.ProperCase))
+                    command.Parameters.AddWithValue("@carrera", StrConv(TextBox3.Text, VbStrConv.ProperCase))
+                    command.Parameters.AddWithValue("@turno", StrConv(TextBox4.Text, VbStrConv.ProperCase))
                     command.Parameters.AddWithValue("@compatibilidad", TextBox5.Text)
 
                     command.ExecuteNonQuery()
@@ -177,5 +179,50 @@ Public Class maestro
         End Using
     End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim connectionString As String = "Server=104.243.38.5;Database=Escuela;User Id=root;Password=insuco2024"
+        ' Crea la conexión a la base de datos
+        Using connection As New MySqlConnection(connectionString)
+            Try
+                ' Abre la conexión
+                connection.Open()
 
+                ' Define la consulta SQL para eliminar
+                Dim query As String = "DELETE FROM maestros WHERE id = @id"
+
+                ' Crea el comando SQL con la consulta y la conexión
+                Using command As New MySqlCommand(query, connection)
+                    ' Añade el parámetro con el valor del TextBox
+                    command.Parameters.AddWithValue("@id", TextBox1.Text)
+
+                    ' Ejecuta el comando
+                    Dim filasAfectadas As Integer = command.ExecuteNonQuery()
+
+                    ' Verifica si se eliminó el registro
+                    If filasAfectadas > 0 Then
+                        MessageBox.Show("Registro eliminado exitosamente.")
+                        DataGridView1.Refresh()
+                        ClearTextBoxes()
+                        LoadData()
+                        DataGridView1.ClearSelection()
+                    Else
+                        MessageBox.Show("No se encontró ningún registro con ese ID." & TextBox1.Text)
+                    End If
+                End Using
+            Catch ex As MySqlException
+                ' Manejo de errores de MySQL
+                MessageBox.Show("Error al eliminar el registro: " & ex.Message)
+            Finally
+                ' Cierra la conexión
+                connection.Close()
+            End Try
+        End Using
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        DataGridView1.Refresh()
+        ClearTextBoxes()
+        LoadData()
+        DataGridView1.ClearSelection()
+    End Sub
 End Class
