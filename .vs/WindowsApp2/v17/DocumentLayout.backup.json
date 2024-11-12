@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios\\windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios\\windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios\\windowsapp2\\menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios\\windowsapp2\\maestro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\maestro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios\\windowsapp2\\maestro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\maestro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios\\windowsapp2\\maestro.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\maestro.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login.vb",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\login.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\login.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\login.vb",
+              "RelativeToolTip": "WindowsApp2\\login.vb",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-12T00:16:02.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "login.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\login.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\login.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\login.vb [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsApp2\\login.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-12T00:13:08.618Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "menuPrincipal.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\menuPrincipal.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\menuPrincipal.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\menuPrincipal.vb [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsApp2\\menuPrincipal.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-12T00:08:29.994Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "maestro.vb",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\maestro.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\maestro.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\maestro.vb",
+              "RelativeToolTip": "WindowsApp2\\maestro.vb",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-11T22:57:06.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "maestro.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\maestro.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\maestro.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\maestro.vb [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsApp2\\maestro.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-11T22:48:14.707Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "maestro.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\maestro.Designer.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\maestro.Designer.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios\\WindowsApp2\\maestro.Designer.vb",
+              "RelativeToolTip": "WindowsApp2\\maestro.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-11T22:41:02.854Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

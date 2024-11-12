@@ -37,7 +37,7 @@ Partial Class login
         Me.Button1.BackColor = System.Drawing.Color.RosyBrown
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button1.Location = New System.Drawing.Point(23, 258)
+        Me.Button1.Location = New System.Drawing.Point(59, 361)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(109, 31)
         Me.Button1.TabIndex = 4
@@ -49,7 +49,7 @@ Partial Class login
         Me.Button2.BackColor = System.Drawing.Color.SeaGreen
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(138, 258)
+        Me.Button2.Location = New System.Drawing.Point(202, 361)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(109, 31)
         Me.Button2.TabIndex = 2
@@ -58,14 +58,14 @@ Partial Class login
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(61, 175)
+        Me.TextBox1.Location = New System.Drawing.Point(116, 258)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(155, 20)
         Me.TextBox1.TabIndex = 0
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(61, 222)
+        Me.TextBox2.Location = New System.Drawing.Point(116, 305)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(155, 20)
@@ -74,28 +74,32 @@ Partial Class login
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(58, 159)
+        Me.Label1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(113, 242)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 13)
+        Me.Label1.Size = New System.Drawing.Size(49, 14)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Usuario"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(58, 206)
+        Me.Label2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(113, 289)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(61, 13)
+        Me.Label2.Size = New System.Drawing.Size(71, 14)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Contrasena"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.WindowsApp2.My.Resources.Resources._295128
+        Me.PictureBox1.Image = Global.WindowsApp2.My.Resources.Resources.universidad_insuco_logo_landingpage
         Me.PictureBox1.ImageLocation = ""
-        Me.PictureBox1.Location = New System.Drawing.Point(34, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(59, 42)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(202, 133)
+        Me.PictureBox1.Size = New System.Drawing.Size(252, 178)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
@@ -104,7 +108,8 @@ Partial Class login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(273, 318)
+        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ClientSize = New System.Drawing.Size(368, 425)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -116,7 +121,7 @@ Partial Class login
         Me.Name = "login"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

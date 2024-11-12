@@ -1,49 +1,45 @@
-﻿Imports System.Data.SqlClient
+﻿Imports System.Text.RegularExpressions
 Imports MySql.Data.MySqlClient
 
 Public Class maestro
+    ' Método para cargar datos desde la base de datos y mostrar en el DataGridView
     Private Sub LoadData()
+        Dim connectionString As String = "server=104.243.38.5;database=Escuela;uid=root;pwd=insuco2024;"
+        Dim query As String = "SELECT * FROM maestros"
 
-        Dim connectionString As String = "Server=DESKTOP-P26QFTT\SQLEXPRESS;Database=Escuela;Trusted_Connection=True;"
-        Dim query As String = "SELECT * FROM Maestros" ' Cambia "NombreDeLaTabla" por el nombre de tu tabla
+        Using connection As New MySqlConnection(connectionString)
+            Using command As New MySqlCommand(query, connection)
+                Dim adapter As New MySqlDataAdapter(command)
+                Dim table As New DataTable()
 
-        Using connection As New SqlConnection(connectionString)
-            ' Crear un adaptador de datos y una tabla
-            Dim adapter As New SqlDataAdapter(query, connection)
-            Dim table As New DataTable()
-
-            Try
-                ' Abrir la conexión
-                connection.Open()
-
-                ' Llenar la tabla con los datos de la consulta
-                adapter.Fill(table)
-
-                ' Llenar el DataGridView con los datos de la tabla
-                DataGridView1.DataSource = table
-
-            Catch ex As Exception
-                MessageBox.Show("Error al cargar los datos: " & ex.Message)
-            Finally
-                ' Cerrar la conexión (se cierra automáticamente con Using, pero este es un ejemplo explícito)
-                connection.Close()
-            End Try
+                Try
+                    connection.Open()
+                    ' Llenar el DataTable con los datos de la consulta
+                    adapter.Fill(table)
+                    ' Asignar el DataTable al DataGridView
+                    DataGridView1.DataSource = table
+                Catch ex As Exception
+                    MessageBox.Show("Error al cargar los datos: " & ex.Message)
+                Finally
+                    connection.Close()
+                End Try
+            End Using
         End Using
     End Sub
 
     Private Sub maestro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'FUNCION QUE SE CARGA AL CARGAR LA VENTANA Y SE CONECTA AUTOMATICAMENTE A LA BASE DE DATOS
+        ' Cargar datos al iniciar la ventana
         LoadData()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'BUTON PARA REGRESAR AL MENU PRINCIPAL
+        ' Botón para regresar al menú principal
         menuPrincipal.Show()
         Me.Hide()
     End Sub
 
     Private Sub ClearTextBoxes()
-        'LIMPIAR TODOS LOS CUADROS DE TEXTO
+        ' Limpiar todos los cuadros de texto
         TextBox1.Clear()
         TextBox2.Clear()
         TextBox3.Clear()
@@ -52,41 +48,36 @@ Public Class maestro
     End Sub
 
     Private Function ValidarCampos() As Boolean
-        ' Verificar cada campo, si alguno está vacío, devuelve False
-        If String.IsNullOrWhiteSpace(TextBox1.Text) Then
-            MessageBox.Show("El campo Nombre es obligatorio.")
-            TextBox1.Focus()
-            Return False
-        End If
-
+        ' Validar que todos los campos estén llenos
         If String.IsNullOrWhiteSpace(TextBox2.Text) Then
-            MessageBox.Show("El campo Apellidos es obligatorio.")
+            MessageBox.Show("El campo Nombre es obligatorio.")
             TextBox2.Focus()
             Return False
         End If
 
         If String.IsNullOrWhiteSpace(TextBox3.Text) Then
-            MessageBox.Show("El campo Correo Electrónico es obligatorio.")
+            MessageBox.Show("El campo Carrera es obligatorio.")
             TextBox3.Focus()
             Return False
         End If
 
         If String.IsNullOrWhiteSpace(TextBox4.Text) Then
-            MessageBox.Show("El campo Teléfono es obligatorio.")
+            MessageBox.Show("El campo Turno es obligatorio.")
             TextBox4.Focus()
             Return False
         End If
 
         If String.IsNullOrWhiteSpace(TextBox5.Text) Then
-            MessageBox.Show("El campo Fecha de Nacimiento es obligatorio.")
+            MessageBox.Show("El campo Compatibilidad es obligatorio.")
             TextBox5.Focus()
             Return False
         End If
+
         Return True
     End Function
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        'OBTENER INFORMACION DE LA FILA SELECCIONADA Y PONER LA INFORMACION EN LOS CUADROS DE TEXTO
+        ' Obtener información de la fila seleccionada y colocarla en los cuadros de texto
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
             TextBox1.Text = row.Cells("id").Value.ToString()
@@ -98,12 +89,22 @@ Public Class maestro
             Button2.Enabled = False
         End If
     End Sub
-
+    Public Sub SetDoubleBuffered(control As Control, enabled As Boolean)
+        Dim doubleBufferPropertyInfo = control.[GetType]().GetProperty("DoubleBuffered", System.Reflection.BindingFlags.Instance Or System.Reflection.BindingFlags.NonPublic)
+        If doubleBufferPropertyInfo IsNot Nothing Then
+            doubleBufferPropertyInfo.SetValue(control, enabled, Nothing)
+        End If
+    End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim connectionString As String = "Server=DESKTOP-P26QFTT\SQLEXPRESS;Database=Escuela;Trusted_Connection=True;"
+        ' Método para agregar un nuevo registro a la base de datos
+        Dim connectionString As String = "server=104.243.38.5;database=Escuela;uid=root;pwd=insuco2024;"
 
-        Using connection As New SqlConnection(connectionString)
-            Using command As New SqlCommand("INSERT INTO maestros ( nombre, carrera, turno, compatibilidad) VALUES ( @nombre, @carrera, @turno, @compatibilidad)", connection)
+        If Not ValidarCampos() Then
+            Exit Sub
+        End If
+
+        Using connection As New MySqlConnection(connectionString)
+            Using command As New MySqlCommand("INSERT INTO maestros (nombre, carrera, turno, compatibilidad) VALUES (@nombre, @carrera, @turno, @compatibilidad)", connection)
                 Try
                     connection.Open()
 
@@ -114,6 +115,8 @@ Public Class maestro
 
                     command.ExecuteNonQuery()
                     MessageBox.Show("Registro agregado correctamente")
+                    LoadData() ' Recargar los datos después de insertar
+                    ClearTextBoxes()
                 Catch ex As Exception
                     MessageBox.Show("Error al registrar: " & ex.Message)
                 Finally
@@ -122,4 +125,57 @@ Public Class maestro
             End Using
         End Using
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        ' Método para editar un registro en la base de datos
+        Dim connectionString As String = "server=104.243.38.5;database=Escuela;uid=root;pwd=insuco2024;"
+
+        ' Validar campos obligatorios
+        If Not ValidarCampos() Then
+            Exit Sub
+        End If
+
+        ' Verificar que el ID esté presente
+        If String.IsNullOrEmpty(TextBox1.Text) Then
+            MessageBox.Show("No se ha seleccionado ningún registro para editar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        Using connection As New MySqlConnection(connectionString)
+            Using command As New MySqlCommand("UPDATE maestros SET nombre = @nombre, carrera = @carrera, turno = @turno, compatibilidad = @compatibilidad WHERE id = @id", connection)
+                Try
+                    connection.Open()
+
+                    ' Agregar parámetros
+                    command.Parameters.AddWithValue("@id", TextBox1.Text)
+                    command.Parameters.AddWithValue("@nombre", TextBox2.Text)
+                    command.Parameters.AddWithValue("@carrera", TextBox3.Text)
+                    command.Parameters.AddWithValue("@turno", TextBox4.Text)
+                    command.Parameters.AddWithValue("@compatibilidad", TextBox5.Text)
+
+                    ' Ejecutar la actualización
+                    command.ExecuteNonQuery()
+                    MessageBox.Show("Registro actualizado correctamente")
+                    DataGridView1.Refresh()
+
+                    ' Recargar los datos después de actualizar y limpiar los cuadros de texto
+                    ClearTextBoxes()
+                    LoadData()
+
+                    ' Restaurar el estado de los botones
+                    Button3.Enabled = False
+                    Button2.Enabled = True
+
+                    ' Desmarcar cualquier selección en el DataGridView
+                    DataGridView1.ClearSelection()
+                Catch ex As Exception
+                    MessageBox.Show("Error al actualizar: " & ex.Message)
+                Finally
+                    connection.Close()
+                End Try
+            End Using
+        End Using
+    End Sub
+
+
 End Class

@@ -8,8 +8,8 @@ Public Class alumnos
     Private Sub LoadData()
 
 
-        Dim connectionString As String = "server=104.243.38.5;database=insuco;uid=root;pwd=insuco2024;"
-        Dim query As String = "SELECT * FROM insuco"
+        Dim connectionString As String = "server=104.243.38.5;database=Escuela;uid=root;pwd=insuco2024;"
+        Dim query As String = "SELECT * FROM Alumnos"
 
         Using connection As New MySqlConnection(connectionString)
             Using command As New MySqlCommand(query, connection)

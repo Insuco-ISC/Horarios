@@ -202,5 +202,11 @@
     <None Include="packages.config" />
     <None Include="Resources\295128.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insuco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\universidad-insuco-logo-landingpage.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
