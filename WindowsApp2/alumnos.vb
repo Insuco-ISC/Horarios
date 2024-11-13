@@ -9,23 +9,19 @@ Public Class alumnos
         LlenarComboBox1()
         LlenarComboBox2()
         LlenarComboBox5()
-        LlenarComboBox6()
         CargarListaAlumnos()
         Button3.Enabled = False
         Button2.Enabled = True
-        Button5.Enabled = True
-
     End Sub
 
     ' Método para cargar todos los alumnos en el DataGridView
     Private Sub CargarListaAlumnos()
-        Dim query As String = "SELECT a.id, a.nombre, a.matricula, a.tetra, t.turno, tp.tipo, oe.oferta, c.carrera, a.fechaNacimiento, a.fechaInscripcion, s.status " &
+        Dim query As String = "SELECT a.id, a.nombre, a.matricula, a.tetra, t.turno, tp.tipo, oe.oferta, c.carrera, a.fechaNacimiento, a.fechaInscripcion, a.status " &
                               "FROM Alumnos a " &
                               "LEFT JOIN Turno t ON a.turno = t.id " &
                               "LEFT JOIN Tipo tp ON a.tipo = tp.id " &
                               "LEFT JOIN oferta_educativa oe ON a.oferta_educativa = oe.id " &
-                              "LEFT JOIN Carreras c ON a.carrera = c.id " &
-                              "LEFT JOIN status s ON a.status = s.id"
+                              "LEFT JOIN Carreras c ON a.carrera = c.id"
 
         Try
             Using connection As New MySqlConnection(connectionString)
@@ -76,11 +72,6 @@ Public Class alumnos
         ComboBox5.ValueMember = "Key"
     End Sub
 
-    ' Método para llenar ComboBox de Status
-    Private Sub LlenarComboBox6()
-        LlenarComboBox(ComboBox6, "SELECT id, status FROM status", "id", "status")
-    End Sub
-
     ' Método genérico para llenar ComboBox
     Private Sub LlenarComboBox(comboBox As ComboBox, query As String, valueMember As String, displayMember As String, Optional parameterValue As String = "")
         Try
@@ -108,24 +99,6 @@ Public Class alumnos
         comboBox.ValueMember = "Key"
     End Sub
 
-    ' Método para limpiar los campos del formulario
-    Private Sub LimpiarCampos()
-        TextBox1.Clear()
-        TextBox2.Clear()
-        TextBox8.Clear()
-        TextBox5.Clear()
-        ComboBox1.SelectedIndex = -1
-        ComboBox2.SelectedIndex = -1
-        ComboBox3.SelectedIndex = -1
-        ComboBox4.SelectedIndex = -1
-        ComboBox5.SelectedIndex = -1
-        ComboBox6.SelectedIndex = -1
-        Button3.Enabled = False
-        Button5.Enabled = False
-        Button2.Enabled = True
-
-    End Sub
-
     ' Evento para manejar la selección en el DataGridView
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         If e.RowIndex >= 0 Then
@@ -135,12 +108,10 @@ Public Class alumnos
             TextBox2.Text = row.Cells("nombre").Value.ToString()
             TextBox8.Text = row.Cells("matricula").Value.ToString()
             TextBox5.Text = row.Cells("fechaNacimiento").Value.ToString()
-            Label12.Text = row.Cells("fechaInscripcion").Value.ToString()
 
             ComboBox5.SelectedIndex = ComboBox5.FindStringExact(row.Cells("tetra").Value.ToString())
             ComboBox1.SelectedIndex = ComboBox1.FindStringExact(row.Cells("turno").Value.ToString())
             ComboBox2.SelectedIndex = ComboBox2.FindStringExact(row.Cells("tipo").Value.ToString())
-            ComboBox6.SelectedIndex = ComboBox6.FindStringExact(row.Cells("status").Value.ToString())
 
             Dim tipoId As String = CType(ComboBox2.SelectedItem, KeyValuePair(Of String, String)).Key
             LlenarComboBox3(tipoId)
@@ -153,7 +124,8 @@ Public Class alumnos
             Button3.Enabled = True
             Button2.Enabled = False
         Else
-            LimpiarCampos()
+            Button3.Enabled = False
+            Button2.Enabled = True
         End If
     End Sub
 
@@ -165,7 +137,7 @@ Public Class alumnos
         End If
 
         Dim query = "INSERT INTO Alumnos (nombre, matricula, tetra, turno, tipo, oferta_educativa, carrera, fechaNacimiento, fechaInscripcion, status) " &
-                    "VALUES (@nombre, @matricula, @tetra, @turno, @tipo, @oferta, @carrera, @fechaNacimiento, NOW(), @status)"
+                    "VALUES (@nombre, @matricula, @tetra, @turno, @tipo, @oferta, @carrera, @fechaNacimiento, NOW(), '1')"
 
         EjecutarConsulta(query, True)
     End Sub
@@ -178,8 +150,8 @@ Public Class alumnos
         End If
 
         Dim id As String = TextBox1.Text
-        Dim query = "UPDATE Alumnos SET nombre = @nombre, matricula = @matricula, tetra = @tetra, turno = @turno, tipo = @tipo, " &
-                    "oferta_educativa = @oferta, carrera = @carrera, fechaNacimiento = @fechaNacimiento, status = @status " &
+        Dim query = "UPDATE Alumnos SET nombre = @nombre, matricula = @matricula, tetra = @tetra, turno = @turno, " &
+                    "tipo = @tipo, oferta_educativa = @oferta, carrera = @carrera, fechaNacimiento = @fechaNacimiento " &
                     "WHERE id = @id"
 
         EjecutarConsulta(query, False, id)
@@ -198,7 +170,6 @@ Public Class alumnos
                     command.Parameters.AddWithValue("@oferta", CType(ComboBox3.SelectedItem, KeyValuePair(Of String, String)).Key)
                     command.Parameters.AddWithValue("@carrera", If(ComboBox4.SelectedItem IsNot Nothing, CType(ComboBox4.SelectedItem, KeyValuePair(Of String, String)).Key, "0"))
                     command.Parameters.AddWithValue("@fechaNacimiento", DateTime.Parse(TextBox5.Text).ToString("yyyy-MM-dd"))
-                    command.Parameters.AddWithValue("@status", CType(ComboBox6.SelectedItem, KeyValuePair(Of String, String)).Key)
                     If Not insertar Then command.Parameters.AddWithValue("@id", id)
 
                     connection.Open()
@@ -212,23 +183,24 @@ Public Class alumnos
             MessageBox.Show("Error: " & ex.Message)
         End Try
     End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ' Botón para regresar al menú principal
         menuPrincipal.Show()
         Me.Hide()
     End Sub
-
-    ' Botón para limpiar todos los campos y actualizar el DataGridView
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        ' Limpiar todos los campos del formulario
-        LimpiarCampos()
-
-        ' Actualizar la lista de alumnos en el DataGridView
-        CargarListaAlumnos()
-
-        ' Mostrar mensaje de confirmación
-        MessageBox.Show("Campos limpiados y lista de alumnos actualizada.")
+    ' Método para limpiar los campos del formulario
+    Private Sub LimpiarCampos()
+        TextBox1.Clear()
+        TextBox2.Clear()
+        TextBox8.Clear()
+        TextBox5.Clear()
+        ComboBox1.SelectedIndex = -1
+        ComboBox2.SelectedIndex = -1
+        ComboBox3.SelectedIndex = -1
+        ComboBox4.SelectedIndex = -1
+        ComboBox5.SelectedIndex = -1
+        Button3.Enabled = False
+        Button2.Enabled = True
     End Sub
-
 End Class
+
