@@ -125,6 +125,7 @@ Partial Class login
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
+        Me.MaximizeBox = False
 
     End Sub
 

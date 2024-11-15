@@ -372,6 +372,7 @@ Partial Class alumnos
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.MaximizeBox = False
 
     End Sub
 
