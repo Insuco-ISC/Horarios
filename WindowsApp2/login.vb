@@ -20,7 +20,7 @@ Public Class login
 
                     ' Verificar si se encontró el usuario
                     If reader.HasRows Then
-                        MessageBox.Show("Acceso concedido", "Login exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        'MessageBox.Show("Acceso concedido", "Login exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         menuPrincipal.Show()
                         Me.Hide()
                     Else
