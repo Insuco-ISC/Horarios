@@ -49,8 +49,8 @@ Partial Class alumnos
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,6 +78,7 @@ Partial Class alumnos
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.ComboBox6)
         Me.GroupBox1.Controls.Add(Me.Label11)
@@ -102,7 +103,6 @@ Partial Class alumnos
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 334)
         Me.GroupBox1.Name = "GroupBox1"
@@ -275,7 +275,7 @@ Partial Class alumnos
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(212, 22)
+        Me.Label5.Location = New System.Drawing.Point(201, 22)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(76, 18)
         Me.Label5.TabIndex = 17
@@ -332,16 +332,8 @@ Partial Class alumnos
         '
         Me.TextBox2.Location = New System.Drawing.Point(55, 43)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(154, 24)
+        Me.TextBox2.Size = New System.Drawing.Size(143, 24)
         Me.TextBox2.TabIndex = 4
-        '
-        'TextBox5
-        '
-        Me.TextBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBox5.Location = New System.Drawing.Point(215, 43)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(79, 24)
-        Me.TextBox5.TabIndex = 7
         '
         'PictureBox1
         '
@@ -354,11 +346,19 @@ Partial Class alumnos
         Me.PictureBox1.TabIndex = 13
         Me.PictureBox1.TabStop = False
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(204, 43)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(90, 24)
+        Me.DateTimePicker1.TabIndex = 41
+        '
         'alumnos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1084, 501)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
@@ -388,7 +388,6 @@ Partial Class alumnos
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox5 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
@@ -404,4 +403,5 @@ Partial Class alumnos
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents ComboBox6 As ComboBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
