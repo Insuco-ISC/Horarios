@@ -3,52 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios1\\windowsapp2\\alumnos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\alumnos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios1\\windowsapp2\\menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios1\\windowsapp2\\login.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\login.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\alumnos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\alumnos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\maestro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\maestro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios1\\windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios1\\windowsapp2\\alumnos.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\alumnos.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios1\\windowsapp2\\alumnos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\alumnos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios1\\windowsapp2\\menuprincipal.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\menuprincipal.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios1\\windowsapp2\\roundedbutton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\roundedbutton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|c:\\users\\vod\\documents\\github\\horarios1\\windowsapp2\\roundedbutton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\roundedbutton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\maestro.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\maestro.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\maestro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\maestro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\menuprincipal.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\menuprincipal.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\maestro.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\maestro.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\menuprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\maestro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\maestro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\roundedbutton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\roundedbutton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\roundedbutton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\roundedbutton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F61519CC-634A-4428-864F-C1054D808D0F}|WindowsApp2\\WindowsApp2.vbproj|solutionrelative:windowsapp2\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,20 +82,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "menuPrincipal.Designer.vb",
-              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\menuPrincipal.Designer.vb",
-              "RelativeDocumentMoniker": "WindowsApp2\\menuPrincipal.Designer.vb",
-              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\menuPrincipal.Designer.vb",
-              "RelativeToolTip": "WindowsApp2\\menuPrincipal.Designer.vb",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAQwK0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "login.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\login.Designer.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\login.Designer.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\login.Designer.vb",
+              "RelativeToolTip": "WindowsApp2\\login.Designer.vb",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAIsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-15T00:32:57.858Z",
+              "WhenOpened": "2024-11-15T22:58:33.519Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "alumnos.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\alumnos.Designer.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\alumnos.Designer.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\alumnos.Designer.vb",
+              "RelativeToolTip": "WindowsApp2\\alumnos.Designer.vb",
+              "ViewState": "AgIAAFoBAAAAAAAAAAAAAHcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-15T22:58:02.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "alumnos.vb",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\alumnos.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\alumnos.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\alumnos.vb",
+              "RelativeToolTip": "WindowsApp2\\alumnos.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-12T15:35:10.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "menuPrincipal.vb",
               "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\menuPrincipal.vb",
               "RelativeDocumentMoniker": "WindowsApp2\\menuPrincipal.vb",
@@ -100,20 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "alumnos.vb",
-              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\alumnos.vb",
-              "RelativeDocumentMoniker": "WindowsApp2\\alumnos.vb",
-              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\alumnos.vb",
-              "RelativeToolTip": "WindowsApp2\\alumnos.vb",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAlwKwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-12T15:35:10.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "alumnos.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\alumnos.vb",
               "RelativeDocumentMoniker": "WindowsApp2\\alumnos.vb",
@@ -125,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "menuPrincipal.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\menuPrincipal.vb",
               "RelativeDocumentMoniker": "WindowsApp2\\menuPrincipal.vb",
@@ -137,7 +158,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "maestro.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\maestro.Designer.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\maestro.Designer.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\maestro.Designer.vb",
+              "RelativeToolTip": "WindowsApp2\\maestro.Designer.vb",
+              "ViewState": "AgIAACkBAAAAAAAAAAAawEMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-11T22:41:02.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "maestro.vb",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\maestro.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\maestro.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\maestro.vb",
+              "RelativeToolTip": "WindowsApp2\\maestro.vb",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAawIwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-11T22:57:06.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "menuPrincipal.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\menuPrincipal.Designer.vb",
+              "RelativeDocumentMoniker": "WindowsApp2\\menuPrincipal.Designer.vb",
+              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\menuPrincipal.Designer.vb",
+              "RelativeToolTip": "WindowsApp2\\menuPrincipal.Designer.vb",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAowKQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-15T00:32:57.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "login.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\login.vb",
               "RelativeDocumentMoniker": "WindowsApp2\\login.vb",
@@ -149,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "maestro.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\maestro.vb",
               "RelativeDocumentMoniker": "WindowsApp2\\maestro.vb",
@@ -161,19 +221,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "RoundedButton.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\RoundedButton.vb",
               "RelativeDocumentMoniker": "WindowsApp2\\RoundedButton.vb",
               "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\RoundedButton.vb [Dise\u00F1o]",
               "RelativeToolTip": "WindowsApp2\\RoundedButton.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-15T00:40:16.542Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-15T00:40:16.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "RoundedButton.vb",
               "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\RoundedButton.vb",
               "RelativeDocumentMoniker": "WindowsApp2\\RoundedButton.vb",
@@ -181,12 +240,11 @@
               "RelativeToolTip": "WindowsApp2\\RoundedButton.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-15T00:39:48.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T00:39:48.844Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "login.vb",
               "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\login.vb",
               "RelativeDocumentMoniker": "WindowsApp2\\login.vb",
@@ -195,32 +253,6 @@
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-11-12T00:16:02.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "maestro.vb",
-              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\maestro.vb",
-              "RelativeDocumentMoniker": "WindowsApp2\\maestro.vb",
-              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\maestro.vb",
-              "RelativeToolTip": "WindowsApp2\\maestro.vb",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAMwJYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-11T22:57:06.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "maestro.Designer.vb",
-              "DocumentMoniker": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\maestro.Designer.vb",
-              "RelativeDocumentMoniker": "WindowsApp2\\maestro.Designer.vb",
-              "ToolTip": "C:\\Users\\Vod\\Documents\\GitHub\\Horarios1\\WindowsApp2\\maestro.Designer.vb",
-              "RelativeToolTip": "WindowsApp2\\maestro.Designer.vb",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAowBEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-11T22:41:02.854Z",
               "EditorCaption": ""
             }
           ]
