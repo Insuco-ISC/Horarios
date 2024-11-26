@@ -131,6 +131,12 @@
     <Compile Include="alumnos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="grupos.Designer.vb">
+      <DependentUpon>grupos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="grupos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,12 @@
       <DependentUpon>maestro.vb</DependentUpon>
     </Compile>
     <Compile Include="maestro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="materias.Designer.vb">
+      <DependentUpon>materias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="materias.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="menuPrincipal.Designer.vb">
@@ -173,11 +185,17 @@
     <EmbeddedResource Include="alumnos.resx">
       <DependentUpon>alumnos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="grupos.resx">
+      <DependentUpon>grupos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="maestro.resx">
       <DependentUpon>maestro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="materias.resx">
+      <DependentUpon>materias.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuPrincipal.resx">
       <DependentUpon>menuPrincipal.vb</DependentUpon>
@@ -210,6 +228,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\universidad-insuco-logo-landingpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

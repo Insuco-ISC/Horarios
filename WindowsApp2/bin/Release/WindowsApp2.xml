@@ -27,6 +27,11 @@ WindowsApp2
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:WindowsApp2.My.Resources.Resources.flecha">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:WindowsApp2.My.Resources.Resources.insuco">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

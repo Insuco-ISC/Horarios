@@ -32,7 +32,6 @@ Partial Class menuPrincipal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -41,18 +40,9 @@ Partial Class menuPrincipal
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.AnimationTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.WindowsApp2.My.Resources.Resources.universidad_insuco_logo_landingpage
-        Me.PictureBox1.Location = New System.Drawing.Point(460, 20)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(180, 60)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'Button1
         '
@@ -86,7 +76,7 @@ Partial Class menuPrincipal
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Verdana", 14.0!, System.Drawing.FontStyle.Bold)
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(420, 120)
+        Me.Button3.Location = New System.Drawing.Point(424, 120)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(240, 80)
         Me.Button3.TabIndex = 3
@@ -112,7 +102,7 @@ Partial Class menuPrincipal
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Verdana", 14.0!, System.Drawing.FontStyle.Bold)
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(690, 120)
+        Me.Button5.Location = New System.Drawing.Point(689, 120)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(240, 80)
         Me.Button5.TabIndex = 5
@@ -148,6 +138,16 @@ Partial Class menuPrincipal
         'AnimationTimer
         '
         Me.AnimationTimer.Interval = 15
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApp2.My.Resources.Resources.universidad_insuco_logo_landingpage
+        Me.PictureBox1.Location = New System.Drawing.Point(460, 20)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(180, 60)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'menuPrincipal
         '
